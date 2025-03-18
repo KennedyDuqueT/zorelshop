@@ -1,0 +1,8 @@
+{
+  "shop": {
+    "currency": "USD",
+    "language": "es",
+    "weightUnit": "kg",
+    "homeUrl": "http://localhost:3000"
+  }
+} 
