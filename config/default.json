@@ -1,6 +1,6 @@
 {
   "shop": {
-    "currency": "USD",
+    "currency": "COP",
     "language": "es",
     "weightUnit": "kg",
     "homeUrl": "http://localhost:3000"
