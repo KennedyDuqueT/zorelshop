@@ -1,0 +1,91 @@
+.main-banner-home {
+  background-image: url("/main-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 490px;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+  }
+  
+  .page-width {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  h2.h1 {
+    color: #8B5E3C;  // Marrón cálido para el título
+    letter-spacing: 0;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    @media screen and (min-width: 768px) {
+      font-size: 4.2rem;
+      line-height: 1.1;
+      max-width: 80%;
+    }
+  }
+
+  p {
+    color: #5C4434;  // Marrón más oscuro para el subtítulo
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+      max-width: 70%;
+    }
+  }
+
+  .button {
+    margin-top: 2rem;
+    
+    &.button-primary {
+      background-color: #C17F59;  // Color cálido para el botón
+      border: none;
+      padding: 1.2rem 3rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #A66B47;  // Versión más oscura para hover
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  // Ajuste para posicionamiento en móvil
+  .text-center {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    @media screen and (min-width: 768px) {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+#app {
+  .header {
+    margin-bottom: 0;
+  }
+  .button {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+}

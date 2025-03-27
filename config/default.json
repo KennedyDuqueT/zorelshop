@@ -4,5 +4,8 @@
     "language": "es",
     "weightUnit": "kg",
     "homeUrl": "http://localhost:3000"
+  },
+  "system": {
+    "theme": "zorelshop"
   }
-} 
+}

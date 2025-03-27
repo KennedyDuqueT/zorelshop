@@ -1,0 +1,97 @@
+:root {
+  --primary: #2C3639;     // Gris oscuro elegante
+  --secondary: #3F4E4F;   // Gris verdoso
+  --surface: #FFFFFF;     // Blanco puro
+  --onSurface: #2C3639;   // Mismo que primary
+  --interactive: #A27B5C;  // Marrón cálido
+  --critical: #A35D6A;    // Rojo borgoña
+  --warning: #CD8D7A;     // Coral suave
+  --highlight: #DCD7C9;   // Beige claro
+  --success: #4A6741;     // Verde oscuro elegante
+  --decorative: #A27B5C;  // Marrón cálido (accent-1)
+  --border: #E5E7EB;      // Gris muy claro
+  --background: #F8F4F1;  // Blanco cálido
+  --icon: #6B7280;        // Gris medio
+  --textSubdued: #6B7280; // Gris medio
+  --divider: #F3F4F6;     // Gris casi blanco
+  --text: #2C3639;        // Mismo que primary
+  --formFieldBorder: #E5E7EB;    // Mismo que border
+  --formFieldBorderShadow: #A27B5C; // Marrón cálido para focus
+}
+
+$font-size-sm: 1.4rem;
+$font-size-md: 1.4rem;
+$font-size-lg: 1.6rem;
+
+$line-height-sm: 1.25;
+$line-height-md: 1.5;
+$line-height-lg: 2;
+
+html {
+  font-size: 62.5%;
+
+  input[type='email'],
+  input[type='password'],
+  input[type='tel'],
+  input[type='text'],
+  select,
+  textarea {
+    padding: 1rem 1.2rem;
+  }
+
+  .button {
+    padding: 1rem 2rem;
+    font-weight: 400;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    
+    &.button-primary {
+      background-color: var(--primary);
+      color: white;
+      &:hover {
+        background-color: var(--interactive);
+      }
+    }
+  }
+}
+
+body {
+  color: var(--text);
+}
+
+.header {
+  padding: 2.5rem;
+  border-bottom: 1px solid var(--divider);
+  margin-bottom: 3rem;
+  @media only screen and (min-width: 1200px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.page-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+  @media screen and (min-width: 1200px) {
+    padding: 0 55px;
+  }
+}
+
+.footer {
+  background-color: #f6f6f6;
+  margin-top: 9rem;
+  padding-top: 1rem;
+  padding-block-end: 1rem;
+  border-top: 1px solid var(--divider);
+  
+  .card-icons {
+    svg {
+      height: 4rem;
+    }
+  }
+  
+  .copyright {
+    font-size: 13px;
+  }
+} 
